@@ -1,0 +1,39 @@
+<div>kafka run</div>
+<div><u>kafka</u>-server-start /<u>usr</u>/local/etc/<u>kafka</u>/server.properties<br></div>
+<div>Kafka Install</div>
+<div>-from a reboot must start zk server</div>
+<div>	-zkServer.sh start or</div>
+<div>	-zkServer start //must be in bin to run, why isn’t it on brew path??<br></div>
+<div>-install kafka (zookeeper if not installed as dependency)</div>
+<div>	-server and api dependency must be same version (0.9.0.1)</div>
+<div>-configure and start server externally</div>
+<div>-THEN run java api</div>
+<div><br></div>
+<div>TODO broker configs</div>
+<div>TODO data inputs</div>
+<div>TODO move to server, scaling and testing</div>
+<div>TODO optimization</div>
+<div><br></div>
+<div>SLIDES Start</div>
+<div>One tutorial</div>
+<div><br></div>
+<div>Scanner data comes in every 30 ms, w/o artificially enforced breaks</div>
+<div>ROS <u><font color="#DCA00D">REP-103</font></u> specifies three principal coordinate frames: <i>map</i>, <i>odom</i>, and <i>base_link</i>. The <i>map</i> and <i>odom</i> frames are world-fixed frames whose origins are typically aligned with the robot's start position. The <i>base_link</i> frame is rigidly affixed to the robot.</div>
+<div><br></div>
+<div>//bug producer won’t return, limit metadata</div>
+<div>//bug consumer won’t consume when producer is multithreaded</div>
+<div> //instance must be created inside run class to maintain thread safety, should be existing since this is thread pool, but blocks</div>
+<div>	Producer prod = new ProducerClass();</div>
+<div>	 Producer<String,String> prodr = prod.getProducer();</div>
+<div>//space are interpreted by consumer as null</div>
+<div>	        	    	  </div>
+<div><br></div>
+<div>———</div>
+<div>Server</div>
+<div>————</div>
+<div>kafka tar </div>
+<div>wget latest tarsal</div>
+<div><br></div>
+<div>wget set</div>
+<div>curl https://bintray.com/sbt/rpm/rpm | sudo tee /etc/yum.repos.d/bintray-sbt-rpm.repo</div>
+<div>sudo yum install sbt</div>
